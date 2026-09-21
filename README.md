@@ -33,4 +33,3 @@ Le notebook `notebooks/demo.ipynb` fonctionne également dans Jupyter Notebook o
 - `data/fsbm_dataset.json` : copie du jeu de données fourni dans l'archive d'origine.
 - `tests/` : vérification du dédoublonnage et des filtres.
 
-Le jeu de données provient de **Cartographie Sémantique des Publications FSBM**, crédité à Mohammed Yasser Rachih dans son README original. Le code de cette variante a été réécrit. Les informations et leur attribution aux chercheurs conservent les limites de qualité du jeu fourni ; les groupes thématiques sont générés automatiquement.
