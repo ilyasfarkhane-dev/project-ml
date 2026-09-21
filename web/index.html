@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b2a"><title>Atlas des publications | FSBM</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand"><span class="symbol">✳</span><div><strong>ATLAS <em>FSBM</em></strong><small>Exploration scientifique</small></div></div><span class="top-note">Faculté des Sciences Ben M'Sik · Casablanca</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">PANORAMA DE LA RECHERCHE</p><h1>Les idées prennent<br><i>forme sur une carte.</i></h1><p>Explorez les publications, trouvez des travaux liés à votre sujet et découvrez les grands ensembles de recherche de la FSBM.</p></div><div class="numbers"><div><b id="count-papers">—</b><span>PUBLICATIONS</span></div><div><b id="count-people">—</b><span>CHERCHEURS</span></div><div><b id="count-topics">—</b><span>THÈMES</span></div></div></section>
+    <section class="workspace" aria-label="Explorer les publications">
+      <div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="query" type="search" placeholder="Ex. intelligence artificielle, matériaux, santé…" aria-label="Rechercher des publications"></label><select id="researcher" aria-label="Filtrer par chercheur"><option value="">Tous les chercheurs</option></select><select id="year" aria-label="Filtrer par année"><option value="">Toutes les années</option></select><button id="reset" type="button">Effacer</button></div>
+      <div class="layout"><div class="map-panel"><div class="panel-head"><div><span class="eyebrow">CARTOGRAPHIE</span><h2>Territoires de recherche</h2></div><span id="map-count" class="subtle"></span></div><div class="map-wrap"><canvas id="map" role="img" aria-label="Carte des publications regroupées par thème"></canvas><div class="map-help">Survolez un point pour lire le titre · Cliquez pour ouvrir la publication</div><div id="tooltip" class="tooltip" hidden></div></div><div id="legend" class="legend" aria-label="Filtrer par thème"></div></div>
+      <aside class="results"><div class="panel-head"><div><span class="eyebrow">SÉLECTION</span><h2>Publications</h2></div><span id="result-count" class="subtle"></span></div><div id="cards" class="cards" aria-live="polite"></div></aside></div>
+    </section>
+    <footer>Données de recherche FSBM · Groupes calculés automatiquement · La carte est une représentation exploratoire.</footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
